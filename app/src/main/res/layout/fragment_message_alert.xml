@@ -1,0 +1,610 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.MessageAlertFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_weight="8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgent Notifications"
+                android:fontFamily="@font/normal3"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/_20sdp"
+                ></TextView>
+            <TextView
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="see all"
+                android:textColor="@color/black"
+                android:fontFamily="@font/normal"
+                android:gravity="right"
+                android:id="@+id/see_all"
+                ></TextView>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="@dimen/_270sdp"-->
+        <!--        android:layout_height="@dimen/_50sdp"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:background="#f7f9fb"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_marginTop="@dimen/_10sdp"-->
+        <!--        >-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="@dimen/_40sdp"-->
+        <!--            android:paddingTop="@dimen/_10sdp"-->
+        <!--            android:src="@drawable/j1"-->
+        <!--            android:layout_marginTop="@dimen/_5sdp"-->
+
+        <!--            ></ImageView>-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            >-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="I will kill you"-->
+        <!--                android:layout_marginTop="@dimen/_5sdp"-->
+        <!--                android:textSize="@dimen/_11sdp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:textColor="@color/dark_blue"-->
+        <!--                android:fontFamily="@font/normal"-->
+        <!--                ></TextView>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="1 hour ago           |"-->
+        <!--                    android:layout_marginTop="@dimen/_11sdp"-->
+        <!--                    android:textSize="@dimen/_10sdp"-->
+        <!--                    android:textColor="@color/light_grey"-->
+        <!--                    android:fontFamily="@font/normal"-->
+
+        <!--                    ></TextView>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="PC"-->
+        <!--                    android:layout_marginTop="@dimen/_11sdp"-->
+        <!--                    android:textSize="@dimen/_10sdp"-->
+        <!--                    android:textColor="@color/orange"-->
+        <!--                    android:fontFamily="@font/normal"-->
+        <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+
+        <!--                    ></TextView>-->
+
+
+
+        <!--            </LinearLayout>-->
+
+
+        <!--        </LinearLayout>-->
+
+        <!--    </LinearLayout>-->
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="@dimen/_270sdp"-->
+        <!--        android:layout_height="@dimen/_50sdp"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:background="#f7f9fb"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_marginTop="@dimen/_10sdp"-->
+        <!--        >-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="@dimen/_35sdp"-->
+        <!--            android:paddingTop="@dimen/_5sdp"-->
+        <!--            android:src="@drawable/j2"-->
+        <!--            android:layout_marginTop="@dimen/_5sdp"-->
+
+        <!--            ></ImageView>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            >-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text=" Nude Video Content"-->
+        <!--                android:layout_marginTop="@dimen/_5sdp"-->
+        <!--                android:textSize="@dimen/_11sdp"-->
+        <!--                android:textColor="@color/dark_blue"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:fontFamily="@font/normal"-->
+        <!--                ></TextView>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="1 day ago          |"-->
+        <!--                    android:layout_marginTop="@dimen/_10sdp"-->
+        <!--                    android:fontFamily="@font/normal"-->
+        <!--                    android:textSize="@dimen/_11sdp"-->
+        <!--                    android:textColor="@color/light_grey"-->
+        <!--                    android:layout_marginLeft="@dimen/_7sdp"-->
+
+        <!--                    ></TextView>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Tablet"-->
+        <!--                    android:fontFamily="@font/normal"-->
+        <!--                    android:layout_marginTop="@dimen/_10sdp"-->
+        <!--                    android:textSize="@dimen/_11sdp"-->
+        <!--                    android:textColor="@color/orange"-->
+        <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+        <!--                    ></TextView>-->
+        <!--            </LinearLayout>-->
+        <!--        </LinearLayout>-->
+        <!--    </LinearLayout>-->
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="@dimen/_270sdp"-->
+        <!--        android:layout_height="@dimen/_50sdp"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:background="#f7f9fb"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_marginTop="@dimen/_10sdp"-->
+        <!--        >-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="@dimen/_35sdp"-->
+        <!--            android:paddingTop="@dimen/_5sdp"-->
+        <!--            android:src="@drawable/j4"-->
+        <!--            android:layout_marginTop="@dimen/_9sdp"-->
+        <!--            android:layout_marginLeft="@dimen/_10sdp"-->
+
+        <!--            ></ImageView>-->
+
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            >-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="   Go suicide"-->
+        <!--                android:layout_marginTop="@dimen/_5sdp"-->
+        <!--                android:textSize="@dimen/_11sdp"-->
+        <!--                android:textColor="@color/dark_blue"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:fontFamily="@font/normal"-->
+        <!--                ></TextView>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                >-->
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="1 day ago        |"-->
+        <!--                    android:layout_marginTop="@dimen/_10sdp"-->
+        <!--                    android:fontFamily="@font/normal"-->
+        <!--                    android:textSize="@dimen/_11sdp"-->
+        <!--                    android:textColor="@color/light_grey"-->
+        <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+        <!--                    ></TextView>-->
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Phone"-->
+        <!--                    android:fontFamily="@font/normal"-->
+        <!--                    android:layout_marginTop="@dimen/_10sdp"-->
+        <!--                    android:textSize="@dimen/_11sdp"-->
+        <!--                    android:textColor="@color/orange"-->
+        <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+        <!--                    ></TextView>-->
+        <!--            </LinearLayout>-->
+        <!--        </LinearLayout>-->
+        <!--    </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:orientation="vertical"
+            android:background="#fff8f6"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Screen Time :"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/normal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    ></TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="   36 mins"
+                    android:fontFamily="@font/normal"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_11sdp"
+
+                    ></TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    app:backgroundTint="@color/dark_red"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/button_border"
+                    android:hint="Block all"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_55sdp"
+                    android:id="@+id/block_all"
+
+                    ></Button>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:background="#fff8f6"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="@dimen/_235sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scrollbars="horizontal"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/next"
+                    android:layout_gravity="center"
+
+                    ></ImageView>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                >-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="@dimen/_54sdp"-->
+<!--                    android:layout_height="@dimen/_60sdp"-->
+<!--                    android:background="#f5f0f1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="@dimen/_10sdp"-->
+<!--                        android:src="@drawable/a1"-->
+<!--                        ></ImageView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="00:23"-->
+<!--                        android:layout_marginTop="@dimen/_4sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textColorHint="@color/dark_blue"-->
+<!--                        ></TextView>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="@dimen/_54sdp"-->
+<!--                    android:layout_height="@dimen/_60sdp"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="#f5f0f1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="@dimen/_10sdp"-->
+<!--                        android:src="@drawable/a2"-->
+
+
+<!--                        ></ImageView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="10:23"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textColorHint="@color/dark_blue"-->
+<!--                        android:layout_marginTop="@dimen/_4sdp"-->
+<!--                        ></TextView>-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="@dimen/_54sdp"-->
+<!--                    android:layout_height="@dimen/_60sdp"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="#f5f0f1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="@dimen/_10sdp"-->
+<!--                        android:src="@drawable/a3"-->
+
+
+<!--                        ></ImageView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="20:23"-->
+<!--                        android:layout_marginTop="@dimen/_4sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textColorHint="@color/dark_blue"-->
+<!--                        ></TextView>-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="@dimen/_54sdp"-->
+<!--                    android:layout_height="@dimen/_60sdp"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="#f5f0f1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="@dimen/_10sdp"-->
+<!--                        android:src="@drawable/a4"-->
+
+
+<!--                        ></ImageView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="03:23"-->
+<!--                        android:layout_marginTop="@dimen/_4sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textColorHint="@color/dark_blue"-->
+<!--                        ></TextView>-->
+
+<!--                </LinearLayout>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/next3"-->
+<!--                    android:layout_gravity="center"-->
+
+<!--                    ></ImageView>-->
+
+
+
+
+
+
+
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+<!--                <Button-->
+<!--                    android:layout_width="@dimen/_55sdp"-->
+<!--                    android:layout_height="@dimen/_25sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/button_border"-->
+<!--                    android:hint="Set Time"-->
+<!--                    android:fontFamily="@font/normal3"-->
+<!--                    android:textColorHint="@color/dark_blue"-->
+<!--                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                    android:textSize="@dimen/_8sdp"-->
+
+
+<!--                    ></Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="@dimen/_55sdp"-->
+<!--                    android:layout_height="@dimen/_25sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/button_border"-->
+<!--                    android:hint="09:00"-->
+<!--                    android:fontFamily="@font/normal3"-->
+<!--                    android:textColorHint="@color/dark_blue"-->
+<!--                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                    android:textSize="@dimen/_8sdp"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+
+
+<!--                    ></Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="@dimen/_55sdp"-->
+<!--                    android:layout_height="@dimen/_25sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/button_border"-->
+<!--                    android:hint="Set Time"-->
+<!--                    android:fontFamily="@font/normal3"-->
+<!--                    android:textColorHint="@color/dark_blue"-->
+<!--                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                    android:textSize="@dimen/_8sdp"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+
+
+<!--                    ></Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="@dimen/_55sdp"-->
+<!--                    android:layout_height="@dimen/_25sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/button_border"-->
+<!--                    android:hint="Set Time"-->
+<!--                    android:textColorHint="@color/dark_blue"-->
+<!--                    android:layout_marginTop="@dimen/_6sdp"-->
+<!--                    android:fontFamily="@font/normal3"-->
+<!--                    android:textSize="@dimen/_8sdp"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+
+
+<!--                    ></Button>-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Children's Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/daysone"
+                android:layout_gravity="start"
+
+
+                />
+            <fragment
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

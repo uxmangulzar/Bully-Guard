@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/childName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Child Name"
+        android:padding="@dimen/_10sdp"
+        android:fontFamily="@font/normal"
+        android:gravity="center"
+        android:textSize="@dimen/_13ssp"/>

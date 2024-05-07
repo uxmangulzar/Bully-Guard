@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_500sdp"
+    android:orientation="vertical"
+    tools:context=".fragments.AccountInfoFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/normal3"
+            android:layout_marginTop="@dimen/_20sdp"
+            tools:ignore="MissingConstraints"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_gravity="center"
+            android:background="#f7f9fb"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Sex : "
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="          Male"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Name : "
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      Travis Scott"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Age : "
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="          12 Years | 10/02/2011 "
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Phone : "
+                    android:fontFamily="@font/normal"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="       050-432-5425"
+                    android:fontFamily="@font/normal"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_12sdp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Address : "
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     5 st avenue, New York"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="School : "
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      The Town School, 540 E 76th St"
+                    android:textColor="@color/orange"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:orientation="vertical"
+            android:background="#fff8f6"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Installed Apps"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/normal3"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:background="#fff8f6"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:scrollbars="horizontal"
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="@dimen/_55sdp"-->
+                <!--                    android:layout_height="@dimen/_55sdp"-->
+                <!--                    android:src="@drawable/app1"-->
+
+
+                <!--                    ></ImageView>-->
+                <!--                <ImageView-->
+                <!--                    android:layout_width="@dimen/_55sdp"-->
+                <!--                    android:layout_height="@dimen/_55sdp"-->
+                <!--                    android:src="@drawable/app2"-->
+                <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+
+                <!--                    ></ImageView>-->
+                <!--                <ImageView-->
+                <!--                    android:layout_width="@dimen/_55sdp"-->
+                <!--                    android:layout_height="@dimen/_55sdp"-->
+                <!--                    android:src="@drawable/app3"-->
+                <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+
+                <!--                    ></ImageView>-->
+                <!--                <ImageView-->
+                <!--                    android:layout_width="@dimen/_55sdp"-->
+                <!--                    android:layout_height="@dimen/_55sdp"-->
+                <!--                    android:src="@drawable/app4"-->
+                <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+
+                <!--                    ></ImageView>-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/next"
+                    android:layout_gravity="center"
+
+                    ></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:id="@+id/profile"
+            android:src="@drawable/control_bar"></ImageView>
+    </LinearLayout>
+</LinearLayout>

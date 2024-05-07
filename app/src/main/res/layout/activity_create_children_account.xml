@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".activities.CreateChildrenAccountActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/return_back_parent"
+
+
+        ></ImageView>
+    <TextView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child account creation"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/daysone"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:textSize="@dimen/_18sdp"
+        ></TextView>
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/camera"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_40sdp"
+        android:paddingRight="@dimen/_40sdp"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Children Last Name"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/dark_blue"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_last_name"
+        android:padding="@dimen/_5sdp"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Children First Name"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/normal"
+        android:layout_marginTop="@dimen/_4sdp"
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_first_name"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/normal"
+        android:layout_marginTop="@dimen/_4sdp"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_phone"
+        android:padding="@dimen/_5sdp"
+        android:inputType="phone"
+        ></EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:fontFamily="@font/normal"
+                android:textColor="@color/dark_blue"
+                android:layout_marginTop="@dimen/_4sdp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:height="@dimen/_30sdp"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:id="@+id/et_ca_age"
+                android:padding="@dimen/_5sdp"
+
+
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:fontFamily="@font/normal"
+                android:textColor="@color/dark_blue"
+                android:layout_marginTop="@dimen/_4sdp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:height="@dimen/_30sdp"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:id="@+id/spinner_ca_sex"
+                android:hint="   Select"
+                android:entries="@array/gender"
+
+
+                ></Spinner>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/normal"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_address"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/normal"
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_school"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/dark_blue"
+        android:hint="Create account"
+        android:fontFamily="@font/normal"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:layout_marginTop="@dimen/_36sdp"
+        android:id="@+id/bt_child_create_account"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"
+        android:background="@drawable/border2"
+        ></Button>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/daysone"
+        android:gravity="bottom"
+        android:text="How to connect ? Click here"
+        android:textColor="@color/orange"
+
+
+        ></TextView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

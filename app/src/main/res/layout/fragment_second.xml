@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragments.SecondFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="right"
+                android:src="@drawable/logobullyguard"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_60sdp"
+                ></ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/child"
+                android:layout_gravity="center"
+                ></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/filter"
+                    android:paddingLeft="@dimen/_40sdp"
+                    android:id="@+id/child_filter"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scott Travis"
+                    android:textColor="@color/dark_blue"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingLeft="@dimen/_70sdp"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_12sdp"
+
+                    android:gravity="center"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_battery_4_bar_24"
+                    android:layout_marginLeft="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="46%"
+                    android:textColor="#ffa500"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    ></TextView>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/newg"
+                android:layout_marginTop="@dimen/_30sdp"
+                >
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/tabLayout1"
+                    app:tabMode="fixed"
+                    android:layout_gravity="center"
+                    app:tabGravity="fill"
+                    app:tabIndicatorGravity="center"
+                    app:tabTextColor="@color/dark_blue"
+                    app:tabIndicatorAnimationMode="fade"
+                    android:background="@drawable/tab_indicator1"
+                    app:tabIndicator="@drawable/tab_indicator"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    app:tabIndicatorColor="@color/white"
+
+                    />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/viewPager3"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

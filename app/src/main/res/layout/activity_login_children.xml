@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+
+    tools:context=".activities.LoginChildrenActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/return_back_child"
+
+
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="164dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/logo"
+
+
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Child"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/daysone"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_34sdp"
+        android:textSize="@dimen/_18sdp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent E-Mail"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/dark_blue"
+        android:layout_marginLeft="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_children_login_email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_5sdp"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent Password"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/normal"
+        android:layout_marginLeft="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_children_login_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+
+    <Button
+
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/dark_blue"
+        android:hint="Sign In"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11ssp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:drawableRight="@drawable/sign"
+        android:paddingRight="@dimen/_40sdp"
+        android:paddingLeft="@dimen/_40sdp"
+        android:id="@+id/bt_signin_login_children"
+        android:background="@drawable/border2"
+        android:fontFamily="@font/normal"
+        ></Button>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_117sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/daysone"
+        android:gravity="bottom"
+        android:text="How to connect ? Click here"
+        android:textColor="@color/orange"
+
+
+        ></TextView>
+
+
+
+
+
+
+
+</LinearLayout>

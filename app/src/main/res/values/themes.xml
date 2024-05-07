@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Add attributes here -->
+        <item name="colorPrimary">#FF003970</item>
+
+    </style>
+    <style name="TimeRangePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+
+        <!-- Add more attributes as needed -->
+    </style>
+
+    <style name="Theme.ActivityAsSystemAlert" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">#00000000</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">#00000000</item>
+
+        <!-- Additional customizations for your Activity-as-system-alert-window style -->
+    </style>
+    <style name="Base.Theme.CodesteemBullyGuard" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+    <style name="dialog_style" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please Wait…</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="DialogSpotColor">@color/dark_blue</item>
+        <item name="DialogSpotCount">4</item>
+
+
+    </style>
+    <style name="Theme.CodesteemBullyGuard" parent="Base.Theme.CodesteemBullyGuard" />
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BottomSheetTransparentBgTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleTransparentBg</item>
+    </style>
+    <style name="textview_blue_regular_16">
+        <item name="android:textColor">@color/grey_A2</item>
+        <item name="android:textColorHint">@color/grey_A2</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/normal</item>
+    </style>
+    <style name="BottomSheetStyleTransparentBg" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BullyGuard</string>
+    <string name="the_key_to_your_child_s_online_safety">
+        The key to your Child\'s online safety
+    </string>
+    <string name="api_key">AIzaSyCNYIKJANZlfAnGTmBq_8l4NWoro8PEH1M</string>
+
+    <string name="ram">  <u>Don\'t have an account ? Sign up</u> </string>
+    <string name="title_activity_temp">temp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="accessibility_description">Accessibility for safety</string>
+    <string name="moderation_rules">Moderation rules in a child protection app are guidelines and filters that automatically monitor and restrict content to ensure a safe online environment for children. They help identify and block inappropriate or harmful material, fostering a secure online experience for young users.</string>
+    <string name="msg_alert">Message alert in your child protection app notifies parents or guardians of any concerning messages or interactions their child has online.</string>
+    <string name="web_alert">Web alert alerts parents or guardians to potentially harmful websites or content accessed by their child, helping them take proactive measures to ensure online safety.</string>
+
+
+</resources>

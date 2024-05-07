@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SliderActivity"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moderation rules"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_22sdp"
+        android:fontFamily="@font/normal3"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moderation_rules"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_22sdp"
+        android:fontFamily="@font/normal"
+        ></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#fff9f9"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Insults"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"></TextView>
+
+            <TextView
+                android:id="@+id/tvInsults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:gravity="end"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Hard Protection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+
+                ></TextView>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/MyMaterialTheme"
+            android:value="100"
+            android:valueFrom="0"
+            android:valueTo="100"
+            android:stepSize="10"
+            app:thumbColor="@color/dark_blue"
+            app:thumbElevation="5dp"
+            app:thumbRadius="10sp"
+            app:thumbStrokeColor="@color/white"
+            app:thumbStrokeWidth="@dimen/_13sdp"
+            app:trackHeight="5dp"
+            android:id="@+id/sliderInsults"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Racism"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"></TextView>
+
+            <TextView
+                android:id="@+id/tvRace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:gravity="end"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Hard Protection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+
+                ></TextView>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/MyMaterialTheme"
+            android:value="100"
+            android:valueFrom="0"
+            android:stepSize="10"
+            android:valueTo="100"
+            app:thumbColor="@color/dark_blue"
+            app:thumbElevation="5dp"
+            app:thumbRadius="10sp"
+            app:thumbStrokeColor="@color/white"
+            app:thumbStrokeWidth="@dimen/_13sdp"
+            android:id="@+id/sliderRace"
+            app:trackHeight="5dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Homophobie"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"></TextView>
+
+            <TextView
+                android:id="@+id/tvHomephobie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:gravity="end"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Hard Protection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+
+                ></TextView>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:theme="@style/MyMaterialTheme"
+            android:value="100"
+            android:valueFrom="0"
+            android:stepSize="10"
+            android:valueTo="100"
+            app:thumbColor="@color/dark_blue"
+            app:thumbElevation="5dp"
+            app:thumbRadius="10sp"
+            app:thumbStrokeColor="@color/white"
+            app:thumbStrokeWidth="@dimen/_13sdp"
+            android:id="@+id/sliderHomephobie"
+            app:trackHeight="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Moral Harassment"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"></TextView>
+
+            <TextView
+                android:id="@+id/tvMoral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:gravity="end"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Hard Protection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+
+                ></TextView>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:theme="@style/MyMaterialTheme"
+            android:value="100"
+            android:valueFrom="0"
+            android:valueTo="100"
+            android:stepSize="10"
+            app:thumbColor="@color/dark_blue"
+            app:thumbElevation="5dp"
+            app:thumbRadius="10sp"
+            app:thumbStrokeColor="@color/white"
+            app:thumbStrokeWidth="@dimen/_13sdp"
+            android:id="@+id/sliderMoral"
+            app:trackHeight="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Body Shaming"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"></TextView>
+
+            <TextView
+                android:id="@+id/tvBodyShame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:gravity="end"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Hard Protection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+
+                ></TextView>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stepSize="10"
+
+            android:theme="@style/MyMaterialTheme"
+            android:value="100"
+            android:valueFrom="0"
+            android:valueTo="100"
+            app:thumbColor="@color/dark_blue"
+            app:thumbElevation="5dp"
+            app:thumbRadius="10sp"
+            app:thumbStrokeColor="@color/white"
+            app:thumbStrokeWidth="@dimen/_13sdp"
+            android:id="@+id/sliderBody"
+            app:trackHeight="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:paddingLeft="@dimen/_20sdp"
+                    android:text="Sexual harassment"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"></TextView>
+
+            <TextView
+                android:id="@+id/tvSexualHarras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal"
+                android:gravity="end"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Hard Protection"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9sdp"
+
+                ></TextView>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stepSize="10"
+
+            android:theme="@style/MyMaterialTheme"
+            android:value="100"
+            android:valueFrom="0"
+            android:valueTo="100"
+            app:thumbColor="@color/dark_blue"
+            app:thumbElevation="5dp"
+            app:thumbRadius="10sp"
+            app:thumbStrokeColor="@color/white"
+            app:thumbStrokeWidth="@dimen/_13sdp"
+            android:id="@+id/sliderSexual"
+            app:trackHeight="5dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:background="@drawable/button_border2"
+            app:backgroundTint="@color/light_orange"
+            android:textColor="@color/white"
+            android:fontFamily="@font/normal3"
+            android:id="@+id/slider_cancel"
+
+
+
+            ></Button>
+
+        <Button
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border2"
+            app:backgroundTint="@color/dark_blue"
+            android:text="Save"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="@font/normal"
+            android:id="@+id/slider_save"
+
+            ></Button>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

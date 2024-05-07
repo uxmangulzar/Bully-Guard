@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:src="@drawable/back_arror2"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/normal3"
+            android:text="Chat"></TextView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don't like you"
+        android:background="@drawable/rounded_corner"
+        android:padding="@dimen/_7sdp"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I waiting you after the school"
+        android:background="@drawable/rounded_corner"
+        android:padding="@dimen/_7sdp"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+
+
+        ></TextView>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:15 pm"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+
+
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please stop"
+        android:background="@drawable/rounded_corner1"
+        android:padding="@dimen/_7sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_220sdp"
+        android:fontFamily="@font/normal"
+
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I will tell to the teacher"
+        android:background="@drawable/rounded_corner1"
+        android:padding="@dimen/_7sdp"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_170sdp"
+
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:20 pm"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_240sdp"
+
+
+
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuck you go suicide"
+        android:background="@drawable/rounded_corner2"
+        android:padding="@dimen/_7sdp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:fontFamily="@font/normal"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:22 pm"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+
+
+        ></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Why are you saying this"
+        android:background="@drawable/rounded_corner1"
+        android:padding="@dimen/_7sdp"
+        android:fontFamily="@font/normal"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_170sdp"
+
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:25 pm"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_240sdp"
+
+
+
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                      "
+        android:background="@drawable/rounded_corner2"
+        android:padding="@dimen/_7sdp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableLeft="@drawable/play_circle"
+        android:drawableRight="@drawable/voice_memo2"
+
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:22 pm"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+
+
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okay sorry"
+        android:background="@drawable/rounded_corner1"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_230sdp"
+        android:fontFamily="@font/normal"
+
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:25 pm"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_240sdp"
+
+
+
+        ></TextView>
+
+
+    <include
+        layout="@layout/type_message_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="bottom" />
+
+
+
+
+</LinearLayout>

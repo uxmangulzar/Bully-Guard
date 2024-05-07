@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".activities.CreateParentAccountActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/return_back_parent"
+
+
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent account creation"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/daysone"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:textSize="@dimen/_16sdp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/normal"
+        android:layout_marginLeft="@dimen/_59sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_last_name"
+        android:padding="@dimen/_5sdp"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/normal"
+        android:layout_marginLeft="@dimen/_59sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_first_name"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/dark_blue"
+        android:layout_marginLeft="@dimen/_59sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/normal"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_phone"
+        android:inputType="phone"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:textColor="@color/dark_blue"
+        android:layout_marginLeft="@dimen/_59sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/normal"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/dark_blue"
+        android:layout_marginLeft="@dimen/_59sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/normal"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_ca_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+    <Button
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/dark_blue"
+        android:hint="Create account"
+        android:fontFamily="@font/normal"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:paddingRight="@dimen/_40sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/border2"
+        android:layout_marginTop="@dimen/_36sdp"
+        android:id="@+id/bt_parent_create_account"
+        android:textSize="@dimen/_15sdp"
+        ></Button>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/daysone"
+        android:gravity="bottom"
+        android:text="How to connect ? Click here"
+        android:textColor="@color/orange"
+
+
+        ></TextView>
+
+
+
+
+
+
+
+
+</LinearLayout>

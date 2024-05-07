@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+
+    tools:context=".activities.LoginParentActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:id="@+id/returnback"
+
+
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="164dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/logo"
+
+
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Parent"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/daysone"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_34sdp"
+        android:textSize="@dimen/_18sdp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent E-Mail"
+        android:textColor="@color/dark_blue"
+        android:layout_marginLeft="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/normal"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_email_login_parent"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_5sdp"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent Password"
+        android:textColor="@color/dark_blue"
+        android:layout_marginLeft="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/normal"
+
+
+
+        ></TextView>
+
+    <EditText
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/et_password_login_parent"
+        android:inputType="textPassword"
+        android:padding="@dimen/_5sdp"
+
+        ></EditText>
+
+
+    <Button
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/orange"
+        android:hint="Sign In"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/normal"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:drawableRight="@drawable/sign"
+        android:id="@+id/bt_signin_login_parent"
+        android:background="@drawable/border2"
+        android:paddingRight="@dimen/_70sdp"
+        android:paddingLeft="@dimen/_60sdp"
+        ></Button>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ram"
+        android:textColor="@color/dark_blue"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/normal"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/tv_noaccount_login_parent"
+
+
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_how_to_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/daysone"
+            android:paddingBottom="@dimen/_20sdp"
+            android:text="How to connect ? Click here"
+            android:textColor="@color/orange"></TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
